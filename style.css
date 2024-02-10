@@ -1,0 +1,126 @@
+/***** Tous les medias *****/
+body{
+    background-color:#ff6c0061;/**#fde3e3;**/
+    margin: 0px;
+    padding: 0px;
+}
+.bg-primary{
+    background-color: #ff6c00!important; /**#0d47a1;**/
+}
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.container-fluid .heading{
+    padding-top: 4rem;
+}
+.heading{
+    color: #9933cc;
+    font-size: 45px;
+    border-bottom: 1px solid;
+    text-align: center;
+    padding-top: 4rem;
+}
+.container{
+    height: 100vh;
+}
+/**Experiences et formations**/
+#experiences, #formations{
+    font-style: italic;
+    padding: 0.5em;
+  
+}
+#experiences p{
+    text-align: center;
+}
+#formations{
+    font-size: 20px;
+}
+.annee{
+    color: green;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/**competences**/
+#competences .progress{
+    height: 50px;
+    margin-top: 30px;
+    background-color: #e57373;
+}
+#competences .progress-bar{   
+    font-size: 1.9em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+/**langues et centre d'interet**/
+#langues-parlees li, #centre-interet li, #qualites li{
+    color: #0d47a1;
+    list-style: none;
+    padding: 1.2em;
+}
+/***** Smartphones et tablettes*****/
+@media (max-width: 991.98px){
+    #moi .laptop, #navbar img{
+        display: none;
+    }
+    #moi .heading{
+        visibility: hidden;
+    }
+    #moi .mobile{
+        background-color: #ff6c00;
+        color: white;
+        text-align: center;
+        height: 100vh;
+    }
+    #moi .mobile img{
+        width: 80%;
+       /* height: 350px;*/
+        border: 8px solid;
+    }
+}
+
+/***** PC et TV *****/
+@media (min-width: 992px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        width: 17em;
+        height: 100vh;
+    }
+    #navbar .navbar-brand img{
+        border: 8px solid;
+    }
+    #navbar .navbar-brand{
+        padding:30px;
+    }
+    #moi .mobile{
+        display: none;
+    }
+    #navbar .navbar-collapse .navbar-nav{
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;  
+    }
+    section{
+        margin-left: 30%;
+    }
+    #moi .laptop{
+        padding: 20%;
+        text-align: center;
+    }
+    #moi .laptop .heading{
+        font-size: 3.5em;
+        color: teal; /***#9933cc;***/
+        border-bottom: 1px solid;
+    }
+    #moi .laptop h3{
+        font-size: 50px;
+    }
+    #moi .laptop h4{
+         font-size: 30px;
+    }
+    #moi .laptop p{
+         font-size: 30px;
+    }    
+}
